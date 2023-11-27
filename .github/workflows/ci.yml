@@ -15,9 +15,9 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm Install
+        run: npm install
 
-      - name: Install dependencies
+      - name: Linting
         run: npm run lint
 
       - name: Testing
