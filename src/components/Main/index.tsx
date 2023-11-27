@@ -1,7 +1,19 @@
 import * as S from './styles'
 
-export const Main = () => (
+export const Main = ({
+  title = 'React Avançado',
+  description = 'TypeScript, ReactJS, NextJS e Styled Components'
+}) => (
   <S.Wrapper>
-    <h1>Casa da Mae Sylvannas</h1>
+    <S.Logo
+      src="/img/logo.svg"
+      alt="Umagem de uma átomo e React Avvançado escrito ao lado."
+    />
+    <S.Title>{title}</S.Title>
+    <S.Description>{description}</S.Description>
+    <S.Illustration
+      src="/img/hero-illustration.svg"
+      alt="Um desenvolvedor de frente para uma tela com código."
+    />
   </S.Wrapper>
 )
